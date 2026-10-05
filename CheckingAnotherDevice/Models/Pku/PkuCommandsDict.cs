@@ -14,7 +14,7 @@ public class PkuCommandsDict
 
     private PkuCommandsDict()
     {
-        var allModules = TA079Modules.GetInstance().AllModules;
+        var allModules = DeviceModules.GetInstance().AllModules;
         var allPku = new List<PkuCommand>(XmlHelper.LoadPkuCommands("settingsPku.xml"));
 
         var pkuByModuleId = allPku.ToLookup(x => x.ModuleId);

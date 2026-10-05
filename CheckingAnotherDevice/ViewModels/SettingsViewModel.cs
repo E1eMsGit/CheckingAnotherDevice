@@ -8,7 +8,7 @@ namespace CheckingAnotherDevice.ViewModels
 {
     public class SettingsViewModel : ViewModelBase
     {
-        public ObservableCollection<RkPkuModuleViewModel> AllModules => TA079ModulesViewModel._allModulesVm;
+        public ObservableCollection<RkPkuModuleViewModel> AllModules => DeviceModulesViewModel._allModulesVm;
         public ReactiveCommand<Unit, Task> SaveSettingsCommand => ReactiveCommand.Create(async () => {
             await Task.Run(XmlHelper.SaveModuleConnectionSettings);
             Log.GetInstance().Write("Изменения настроек модулей сохранены.", ELogMessageColors.Message);

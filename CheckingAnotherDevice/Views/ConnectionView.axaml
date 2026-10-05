@@ -8,7 +8,7 @@
              x:Class="CheckingAnotherDevice.Views.ConnectionView">
 	
     <UserControl.DataContext>
-        <vm:TA079ModulesViewModel/>
+        <vm:DeviceModulesViewModel/>
     </UserControl.DataContext>
 
     <UserControl.Resources>

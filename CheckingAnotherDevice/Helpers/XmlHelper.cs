@@ -77,7 +77,7 @@ namespace CheckingAnotherDevice.Helpers
         
         public static void SaveModuleConnectionSettings()
         {
-            var modules = TA079Modules.GetInstance().AllModules;
+            var modules = DeviceModules.GetInstance().AllModules;
             var rkPkuModules = new RkPkuModulesSettings();
 
             foreach (var module in modules)

@@ -14,7 +14,7 @@ public class RkCommandsDict
 
     private RkCommandsDict()
     {
-        var allModules = TA079Modules.GetInstance().AllModules;
+        var allModules = DeviceModules.GetInstance().AllModules;
         var allRks = new List<RkCommand>(XmlHelper.LoadRkCommands("settingsRk.xml"));
 
         var rkByModuleId = allRks.ToLookup(x => x.ModuleId);

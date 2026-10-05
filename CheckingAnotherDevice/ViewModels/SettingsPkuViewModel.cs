@@ -13,7 +13,7 @@ namespace CheckingAnotherDevice.ViewModels
 {
     public class SettingsPkuViewModel : ViewModelBase
     {
-        private ObservableCollection<RkPkuModuleViewModel> _allModules = TA079ModulesViewModel._allModulesVm;
+        private ObservableCollection<RkPkuModuleViewModel> _allModules = DeviceModulesViewModel._allModulesVm;
        
         public Dictionary<int, ObservableCollection<PkuCommand>> PkuCommands => PkuCommandsDict.GetInstance().PkuCommands;
         public IEnumerable<EPkuMode> Modes { get; } = Enum.GetValues(typeof(EPkuMode)).Cast<EPkuMode>();

@@ -36,7 +36,7 @@ namespace CheckingAnotherDevice.ViewModels
         private bool _isManualModeEnabled;
         private readonly object _pkuCountLock;
 
-        public ObservableCollection<RkPkuModuleViewModel> AllModules => TA079ModulesViewModel._allModulesVm;
+        public ObservableCollection<RkPkuModuleViewModel> AllModules => DeviceModulesViewModel._allModulesVm;
         public Dictionary<int, ObservableCollection<RkCommand>> RkCommands => RkCommandsDict.GetInstance().RkCommands;
         public ushort Duration
         {

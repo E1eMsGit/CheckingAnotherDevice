@@ -4,12 +4,12 @@ using CheckingAnotherDevice.Helpers;
 
 namespace CheckingAnotherDevice.Models.Modules;
 
-public class TA079Modules 
+public class DeviceModules 
 {
-    private static TA079Modules _instance;
+    private static DeviceModules _instance;
     public ObservableCollection<RkPkuModule> AllModules { get; set; }
 
-    private TA079Modules()
+    private DeviceModules()
     {
         try
         {
@@ -26,11 +26,11 @@ public class TA079Modules
         }
     }
 
-    public static TA079Modules GetInstance()
+    public static DeviceModules GetInstance()
     {
         if (_instance == null)
         {
-            _instance = new TA079Modules();
+            _instance = new DeviceModules();
         }
 
         return _instance;

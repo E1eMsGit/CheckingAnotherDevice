@@ -8,7 +8,7 @@ using CheckingAnotherDevice.Models.Modules;
 
 namespace CheckingAnotherDevice.ViewModels;
 
-public class TA079ModulesViewModel : ViewModelBase
+public class DeviceModulesViewModel : ViewModelBase
 {
     public static ObservableCollection<RkPkuModuleViewModel> _allModulesVm;
     private bool _isButtonEnable;
@@ -41,9 +41,9 @@ public class TA079ModulesViewModel : ViewModelBase
         IsButtonEnable = true;
     });
 
-    public TA079ModulesViewModel()
+    public DeviceModulesViewModel()
     {
-        AllModulesVm = TA079Modules.GetInstance().AllModules.OfType<RkPkuModule>().Select(RkPkuModuleViewModel.FromModule).ToObservableCollection();
+        AllModulesVm = DeviceModules.GetInstance().AllModules.OfType<RkPkuModule>().Select(RkPkuModuleViewModel.FromModule).ToObservableCollection();
         IsButtonEnable = true;
     }
 }
