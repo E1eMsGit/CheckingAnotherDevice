@@ -1,0 +1,72 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:CheckingAnotherDevice.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"     
+        xmlns:i="clr-namespace:Avalonia.Xaml.Interactivity;assembly=Avalonia.Xaml.Interactivity"
+        xmlns:ia="clr-namespace:Avalonia.Xaml.Interactions.Core;assembly=Avalonia.Xaml.Interactions"
+        xmlns:views="clr-namespace:CheckingAnotherDevice.Views"
+        mc:Ignorable="d" d:DesignWidth="1390" d:DesignHeight="1040"
+        x:Class="CheckingAnotherDevice.Views.MainWindow"
+        Icon="/Assets/hub.ico"
+        Title="Device"
+        FontSize="14"
+        Foreground="{StaticResource SystemBaseHighColor}"
+        TransparencyLevelHint="AcrylicBlur"
+        Background="Transparent"
+        ExtendClientAreaToDecorationsHint="True" 
+        MinHeight="1080" MinWidth="1665" Width="1665" CanResize="True">
+
+  <Window.DataContext>
+    <vm:MainWindowViewModel/>
+  </Window.DataContext>
+
+  <i:Interaction.Behaviors>
+    <ia:EventTriggerBehavior EventName="Loaded">
+      <ia:InvokeCommandAction Command="{Binding OnWindowLoaded}" />
+    </ia:EventTriggerBehavior>
+    <ia:EventTriggerBehavior EventName="Closing">
+      <ia:InvokeCommandAction Command="{Binding OnWindowClosing}" />
+    </ia:EventTriggerBehavior>
+  </i:Interaction.Behaviors>
+    
+  <Panel>
+    <DockPanel HorizontalAlignment="Stretch">
+      <ExperimentalAcrylicBorder DockPanel.Dock="Left" Width="220">
+        <ExperimentalAcrylicBorder.Material>
+          <ExperimentalAcrylicMaterial TintColor="Black" MaterialOpacity="0.85" TintOpacity="1" BackgroundSource="Digger" />
+        </ExperimentalAcrylicBorder.Material>
+        <TextBlock Text="Device" HorizontalAlignment="Center" Margin="0 40 0 0" FontSize="16"/>
+      </ExperimentalAcrylicBorder>
+        
+      <ExperimentalAcrylicBorder IsHitTestVisible="False">
+        <ExperimentalAcrylicBorder.Material>
+          <ExperimentalAcrylicMaterial TintColor="#222222" MaterialOpacity="0.85" TintOpacity="1" />
+        </ExperimentalAcrylicBorder.Material>
+        <TextBlock Text="{Binding #TabControl.SelectedItem.Header}" Margin="40 20" FontSize="32" FontWeight="Light" />
+      </ExperimentalAcrylicBorder>
+    </DockPanel>          
+    
+  <TabControl x:Name="TabControl" Classes="sidebar" Margin="0 40 0 20">
+	  <TabItem Header="Подключение">
+          <views:ConnectionView />
+      </TabItem>
+      
+      <TabItem Header="Проверка прибора">
+          <views:DeviceCheckingView />
+      </TabItem>
+      
+    <TabItem Header="Настройки модулей">
+		<views:SettingsView />
+    </TabItem>
+
+      <TabItem Header="Настройки РК">
+		  <views:SettingsRkView />
+      </TabItem>
+
+      <TabItem Header="Настройки ПКУ">
+          <views:SettingsPkuView />
+      </TabItem>
+  </TabControl>
+  </Panel>
+</Window>

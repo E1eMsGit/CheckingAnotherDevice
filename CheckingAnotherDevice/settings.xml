@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settingsmodule>
+	<module id="0" name="РК-101" connectionstring="32001, 192.168.2.207:32000" mapversion="5" />
+	<module id="1" name="РК-102" connectionstring="32002, 192.168.2.206:32000" mapversion="5" />
+	<module id="2" name="РК-103" connectionstring="32003, 192.168.2.201:32000" mapversion="5" />
+	<module id="3" name="РК-104" connectionstring="32004, 192.168.2.203:32000" mapversion="5" />
+	<module id="4" name="РК-117-1" connectionstring="32005, 192.168.2.208:32000" mapversion="5" />
+	<module id="5" name="ПКУ-111-1" connectionstring="32006, 192.168.2.196:32000" mapversion="5" />
+	<module id="6" name="ПКУ-111-2" connectionstring="32007, 192.168.2.195:32000" mapversion="5" />
+	<module id="7" name="ПКУ-112-1" connectionstring="32008, 192.168.2.193:32000" mapversion="5" />
+	<module id="8" name="ПКУ-112-2" connectionstring="32009, 192.168.2.192:32000" mapversion="5" />
+	<module id="9" name="ПКУ-113-1" connectionstring="32010, 192.168.2.191:32000" mapversion="5" />
+	<module id="10" name="ПКУ-113-2" connectionstring="32011, 192.168.2.190:32000" mapversion="5" />
+	<module id="11" name="ПКУ-114-1" connectionstring="32012, 192.168.2.178:32000" mapversion="5" />
+	<module id="12" name="ПКУ-114-2" connectionstring="32013, 192.168.2.214:32000" mapversion="5" />
+	<module id="13" name="ПКУ-115-1" connectionstring="32014, 192.168.2.164:32000" mapversion="5" />
+	<module id="14" name="ПКУ-115-2" connectionstring="32015, 192.168.2.169:32000" mapversion="5" />
+	<module id="15" name="ПКУ-116-1" connectionstring="32016, 192.168.2.197:32000" mapversion="5" />
+	<module id="16" name="ПКУ-116-2" connectionstring="32017, 192.168.2.179:32000" mapversion="5" />
+	<module id="17" name="ПКУ-117-2" connectionstring="32018, 192.168.2.202:32000" mapversion="5" />
+</settingsmodule>

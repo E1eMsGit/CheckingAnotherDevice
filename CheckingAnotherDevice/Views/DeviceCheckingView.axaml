@@ -1,0 +1,105 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1150" d:DesignHeight="800"
+             xmlns:rk="clr-namespace:CheckingAnotherDevice.Models.Rk"
+             xmlns:vm="clr-namespace:CheckingAnotherDevice.ViewModels"
+             xmlns:views="clr-namespace:CheckingAnotherDevice.Views"
+             x:Class="CheckingAnotherDevice.Views.DeviceCheckingView">
+    
+    <UserControl.DataContext>
+        <vm:DeviceCheckingViewModel/>
+    </UserControl.DataContext>
+
+    <UserControl.Styles>
+        <Style Selector="Button">
+            <Setter Property="CornerRadius" Value="5"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+        </Style>
+    </UserControl.Styles>
+
+    <UserControl.Resources>
+        <DataTemplate x:Key="IRTemplate" DataType="rk:RkCommand">
+            <Button Content="{Binding Name}" Click="Button_OnClick"
+                    Command="{Binding $parent[ItemsRepeater].DataContext.SendCommand}" CommandParameter="{Binding}"/>
+        </DataTemplate>
+        <UniformGridLayout x:Key="IRLayout"  Orientation="Horizontal" MinRowSpacing="5"  
+                           MinColumnSpacing="5" ItemsStretch="Fill" MaximumRowsOrColumns="5"/>
+    </UserControl.Resources>
+
+    <Grid RowDefinitions="Auto *" Margin="40 20 40 0" >
+        <!--Команды-->
+        <Grid ColumnDefinitions="* * *" RowDefinitions="* *" Grid.Row="0">
+                <HeaderedContentControl Header="РК-101" Background="Gray" Margin="0 0 10 0">
+                    <ItemsRepeater Items="{Binding RkCommands[0]}"
+                                   ItemTemplate="{StaticResource IRTemplate}"
+                                   Layout="{StaticResource IRLayout}"
+                                   IsEnabled="{Binding IsManualModeEnabled}"/>
+                </HeaderedContentControl>
+                
+                <HeaderedContentControl Grid.Row="0" Grid.Column="1" Header="РК-102" Background="Gray" Margin="0 0 10 0">
+                    <ItemsRepeater Items="{Binding RkCommands[1]}"
+                                   ItemTemplate="{StaticResource IRTemplate}"
+                                   Layout="{StaticResource IRLayout}"
+                                   IsEnabled="{Binding IsManualModeEnabled}"/>
+                </HeaderedContentControl>
+
+			<HeaderedContentControl Grid.Row="0" Grid.Column="2" Header="РК-103" Background="Gray">
+                    <ItemsRepeater Items="{Binding RkCommands[2]}"
+                                   ItemTemplate="{StaticResource IRTemplate}"
+                                   Layout="{StaticResource IRLayout}"
+                                   IsEnabled="{Binding IsManualModeEnabled}"/>
+                </HeaderedContentControl>
+
+                <HeaderedContentControl Grid.Row="1" Grid.Column="0" Header="РК-104" Background="Gray" Margin="0 10 10 0">
+                    <ItemsRepeater Items="{Binding RkCommands[3]}"
+                                   ItemTemplate="{StaticResource IRTemplate}"
+                                   Layout="{StaticResource IRLayout}"
+                                   IsEnabled="{Binding IsManualModeEnabled}"/>
+                </HeaderedContentControl>
+
+			<HeaderedContentControl Grid.Row="1" Grid.Column="1" Header="РК-117-1" Background="Gray" Margin="0 10 0 0">
+                    <ItemsRepeater Items="{Binding RkCommands[4]}"
+                                   ItemTemplate="{StaticResource IRTemplate}"
+                                   IsEnabled="{Binding IsManualModeEnabled}">
+                        <ItemsRepeater.Layout>
+                            <UniformGridLayout  Orientation="Horizontal" MinRowSpacing="5" MinColumnSpacing="5"
+                                                ItemsStretch="Fill" MaximumRowsOrColumns="4"/>
+                        </ItemsRepeater.Layout>
+                    </ItemsRepeater>
+                </HeaderedContentControl>
+        </Grid>
+
+        <DockPanel Margin="0 20 0 0" Grid.Row="1">
+            <!-- Настройки -->
+            <StackPanel DockPanel.Dock="Left" Spacing="10" MinWidth="150" Margin="0 0 40 0">
+                <TextBlock Text="Длительность команды, мс"/>
+                <NumericUpDown Margin="0 0 0 10" Value="{Binding Duration}"
+                               HorizontalContentAlignment="Center" Increment="10" Maximum="65535" Minimum="0" 
+                               LostFocus="InputElement_OnLostFocus" ParsingNumberStyle="Integer"
+                               x:Name="Duration" IsEnabled="{Binding IsManualModeEnabled}"/>
+                
+                <!--Автоматическа проверка-->
+                <TextBlock Text="Автоматическа проверка"/>
+                <StackPanel Orientation="Horizontal" Spacing="10" VerticalAlignment="Top" Margin="0 0 0 10" IsEnabled="{Binding IsManualModeEnabled}">
+                    <TextBox Watermark="Файл теста" MinWidth="170" IsReadOnly="True" Text="{Binding FileInfo.Name}"/>
+                    <Button Content="Обзор" Command="{Binding OpenFileCommand}"/>
+                </StackPanel>
+                <StackPanel IsVisible="False" Spacing="10" Orientation="Horizontal" Margin="0 0 0 10">
+                    <RadioButton Content="С остановом"/>
+                    <RadioButton Content="Без останова" IsChecked="True"/>
+                </StackPanel>
+                <Button Margin="0 0 0 10" Content="{Binding StartBtnText}" 
+                        Command="{Binding StartTestCommand}" />
+                <ProgressBar IsIndeterminate="{Binding StartProgressBar}" />
+            </StackPanel>
+
+            <!-- Лог-->
+			<views:LogView/>
+        </DockPanel>
+    </Grid>
+</UserControl>

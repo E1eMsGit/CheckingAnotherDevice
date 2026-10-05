@@ -1,0 +1,138 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:viewModels="clr-namespace:CheckingAnotherDevice.ViewModels"
+             xmlns:models="clr-namespace:CheckingAnotherDevice.Models.Pku"
+             xmlns:converters="clr-namespace:CheckingAnotherDevice.Converters"
+             x:Class="CheckingAnotherDevice.Views.SettingsPkuView">
+
+    <UserControl.DataContext>
+        <viewModels:SettingsPkuViewModel/>
+    </UserControl.DataContext>
+
+	<UserControl.Resources>
+        <converters:EnumConverter x:Key="EnumConverter"/>
+
+		<DataTemplate x:Key="IRTemplate" DataType="models:PkuCommand">
+            <HeaderedContentControl Background="Gray" Header="{Binding Name}" Margin="0 20 0 0">
+                <StackPanel Spacing="10" Margin="10 0">
+                    <TextBlock Text="Номер ПКУ" HorizontalAlignment="Center"/>
+                    <NumericUpDown Value="{Binding Number}" LostFocus="InputElement_OnLostFocus"
+                                   Classes="RkPkuValues"/>
+                    <TextBlock Text="Режим" HorizontalAlignment="Center"/>
+                    <ComboBox Items="{Binding $parent[ItemsRepeater].DataContext.Modes}" SelectedItem="{Binding Mode}"
+                              HorizontalAlignment="Stretch">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding .,Converter={StaticResource EnumConverter}}" HorizontalAlignment="Center" />
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </StackPanel>
+            </HeaderedContentControl>
+        </DataTemplate>
+
+        <UniformGridLayout x:Key="IRLayout" Orientation="Horizontal" ItemsStretch="Fill"
+                           MaximumRowsOrColumns="6" MinColumnSpacing="20"/>
+	</UserControl.Resources>
+
+	<Grid RowDefinitions="* Auto" Margin="40 0">
+        <TabControl Grid.Row="0" Padding="0">
+            <TabItem Header="{Binding PkuCommands[5][0].ModuleName}">
+                <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                <ItemsRepeater  Items="{Binding PkuCommands[5]}"
+                                ItemTemplate="{StaticResource IRTemplate}"
+                                Layout="{StaticResource IRLayout}"/>
+                </ScrollViewer>
+			</TabItem>
+            <TabItem Header="{Binding PkuCommands[6][0].ModuleName}">
+                <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                    <ItemsRepeater  Items="{Binding PkuCommands[6]}"
+                                    ItemTemplate="{StaticResource IRTemplate}"
+                                    Layout="{StaticResource IRLayout}"/>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="{Binding PkuCommands[7][0].ModuleName}">
+                <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                    <ItemsRepeater  Items="{Binding PkuCommands[7]}"
+                                    ItemTemplate="{StaticResource IRTemplate}"
+                                    Layout="{StaticResource IRLayout}"/>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="{Binding PkuCommands[8][0].ModuleName}">
+                <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                    <ItemsRepeater  Items="{Binding PkuCommands[8]}"
+                                    ItemTemplate="{StaticResource IRTemplate}"
+                                    Layout="{StaticResource IRLayout}"/>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="{Binding PkuCommands[9][0].ModuleName}">
+                <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                    <ItemsRepeater  Items="{Binding PkuCommands[9]}"
+                                    ItemTemplate="{StaticResource IRTemplate}"
+                                    Layout="{StaticResource IRLayout}"/>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="{Binding PkuCommands[10][0].ModuleName}">
+                <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                    <ItemsRepeater  Items="{Binding PkuCommands[10]}"
+                                    ItemTemplate="{StaticResource IRTemplate}"
+                                    Layout="{StaticResource IRLayout}"/>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="{Binding PkuCommands[11][0].ModuleName}">
+                <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                    <ItemsRepeater  Items="{Binding PkuCommands[11]}"
+                                    ItemTemplate="{StaticResource IRTemplate}"
+                                    Layout="{StaticResource IRLayout}"/>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="{Binding PkuCommands[12][0].ModuleName}">
+                <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                    <ItemsRepeater  Items="{Binding PkuCommands[12]}"
+                                    ItemTemplate="{StaticResource IRTemplate}"
+                                    Layout="{StaticResource IRLayout}"/>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="{Binding PkuCommands[13][0].ModuleName}">
+                <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                    <ItemsRepeater  Items="{Binding PkuCommands[13]}"
+                                    ItemTemplate="{StaticResource IRTemplate}"
+                                    Layout="{StaticResource IRLayout}"/>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="{Binding PkuCommands[14][0].ModuleName}">
+                <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                    <ItemsRepeater  Items="{Binding PkuCommands[14]}"
+                                    ItemTemplate="{StaticResource IRTemplate}"
+                                    Layout="{StaticResource IRLayout}"/>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="{Binding PkuCommands[15][0].ModuleName}">
+                <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                    <ItemsRepeater  Items="{Binding PkuCommands[15]}"
+                                    ItemTemplate="{StaticResource IRTemplate}"
+                                    Layout="{StaticResource IRLayout}"/>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="{Binding PkuCommands[16][0].ModuleName}">
+                <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                    <ItemsRepeater  Items="{Binding PkuCommands[16]}"
+                                    ItemTemplate="{StaticResource IRTemplate}"
+                                    Layout="{StaticResource IRLayout}"/>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="{Binding PkuCommands[17][0].ModuleName}">
+                <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                    <ItemsRepeater  Items="{Binding PkuCommands[17]}"
+                                    ItemTemplate="{StaticResource IRTemplate}"
+                                    Layout="{StaticResource IRLayout}"/>
+                </ScrollViewer>
+            </TabItem>
+        </TabControl>
+
+        <Button Grid.Row="1" Command="{Binding SaveSettingsPkuCommand}" Classes="SaveBtn"/>
+    </Grid>
+</UserControl>

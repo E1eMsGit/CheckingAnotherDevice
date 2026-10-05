@@ -1,0 +1,51 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:CheckingAnotherDevice.ViewModels"
+             xmlns:converters="clr-namespace:CheckingAnotherDevice.Converters"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="CheckingAnotherDevice.Views.ConnectionView">
+	
+    <UserControl.DataContext>
+        <vm:TA079ModulesViewModel/>
+    </UserControl.DataContext>
+
+    <UserControl.Resources>
+        <converters:ModuleConnectionStateConverter x:Key="ConnectionStateConverter"/>
+    </UserControl.Resources>
+
+	<UserControl.Styles>
+        <Style Selector="Button">
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="CornerRadius" Value="5"/>
+        </Style>
+    </UserControl.Styles>
+
+    <ScrollViewer>
+        <Grid RowDefinitions="Auto *" Margin="40 20 40 0" >
+            <ItemsRepeater Items="{Binding AllModulesVm}" DockPanel.Dock="Top" >
+                <ItemsRepeater.ItemTemplate>
+                    <DataTemplate DataType="vm:RkPkuModuleViewModel">
+						<Button Content="{Binding Name}"
+                                Command="{Binding ConnectDisconnectCommand}"
+                                Background="{Binding ConnectionState, Converter={StaticResource ConnectionStateConverter}, Mode=OneWay}"/>
+                    </DataTemplate>
+                </ItemsRepeater.ItemTemplate>
+                <ItemsRepeater.Layout>
+                    <UniformGridLayout Orientation="Horizontal"
+                                       MinRowSpacing="20" MinColumnSpacing="20"
+                                       ItemsStretch="Uniform"  MaximumRowsOrColumns="6"
+                                       MinItemHeight="100" MinItemWidth="100"/>
+                </ItemsRepeater.Layout>
+            </ItemsRepeater>
+            <Button Grid.Row="1"  Content="ПОДКЛЮЧИТЬ ВСЕ" Margin="0 20 0 0"
+                    Command="{Binding ConnectAllCommand}"
+                    IsEnabled="{Binding IsButtonEnable}"/>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

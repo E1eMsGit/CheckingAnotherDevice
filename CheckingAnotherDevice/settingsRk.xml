@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<commands>
+	<command name="X1-1" modulename="РК-101" rknumber="1" moduleid="0" />
+	<command name="X2-1" modulename="РК-101" rknumber="2" moduleid="0" />
+	<command name="X3-1" modulename="РК-101" rknumber="3" moduleid="0" />
+	<command name="X4-1" modulename="РК-101" rknumber="4" moduleid="0" />
+	<command name="X5-1" modulename="РК-101" rknumber="5" moduleid="0" />
+	<command name="X6-1" modulename="РК-101" rknumber="6" moduleid="0" />
+	<command name="X7-1" modulename="РК-101" rknumber="7" moduleid="0" />
+	<command name="X8-1" modulename="РК-101" rknumber="8" moduleid="0" />
+	<command name="X9-1" modulename="РК-101" rknumber="9" moduleid="0" />
+	<command name="X10-1" modulename="РК-101" rknumber="10" moduleid="0" />
+	<command name="Y1-1" modulename="РК-101" rknumber="25" moduleid="0" />
+	<command name="Y2-1" modulename="РК-101" rknumber="26" moduleid="0" />
+	<command name="Y3-1" modulename="РК-101" rknumber="27" moduleid="0" />
+	<command name="Y4-1" modulename="РК-101" rknumber="28" moduleid="0" />
+	<command name="Y5-1" modulename="РК-101" rknumber="29" moduleid="0" />
+	<command name="Y6-1" modulename="РК-101" rknumber="30" moduleid="0" />
+	<command name="Y7-1" modulename="РК-101" rknumber="31" moduleid="0" />
+	<command name="Y8-1" modulename="РК-101" rknumber="32" moduleid="0" />
+	<command name="Y9-1" modulename="РК-101" rknumber="33" moduleid="0" />
+	<command name="Y10-1" modulename="РК-101" rknumber="34" moduleid="0" />
+	<command name="Y11-1" modulename="РК-101" rknumber="35" moduleid="0" />
+	<command name="Y12-1" modulename="РК-101" rknumber="36" moduleid="0" />
+	<command name="KB-1 ОП" modulename="РК-101" rknumber="37" moduleid="0" />
+	<command name="КЗ-1 ОП" modulename="РК-101" rknumber="38" moduleid="0" />
+	<command name="KB-1" modulename="РК-101" rknumber="39" moduleid="0" />
+	<command name="КЗ-1" modulename="РК-101" rknumber="40" moduleid="0" />
+	<command name="X1-2" modulename="РК-102" rknumber="1" moduleid="1" />
+	<command name="X2-2" modulename="РК-102" rknumber="2" moduleid="1" />
+	<command name="X3-2" modulename="РК-102" rknumber="3" moduleid="1" />
+	<command name="X4-2" modulename="РК-102" rknumber="4" moduleid="1" />
+	<command name="X5-2" modulename="РК-102" rknumber="5" moduleid="1" />
+	<command name="X6-2" modulename="РК-102" rknumber="6" moduleid="1" />
+	<command name="X7-2" modulename="РК-102" rknumber="7" moduleid="1" />
+	<command name="X8-2" modulename="РК-102" rknumber="8" moduleid="1" />
+	<command name="X9-2" modulename="РК-102" rknumber="9" moduleid="1" />
+	<command name="X10-2" modulename="РК-102" rknumber="10" moduleid="1" />
+	<command name="Y1-2" modulename="РК-102" rknumber="25" moduleid="1" />
+	<command name="Y2-2" modulename="РК-102" rknumber="26" moduleid="1" />
+	<command name="Y3-2" modulename="РК-102" rknumber="27" moduleid="1" />
+	<command name="Y4-2" modulename="РК-102" rknumber="28" moduleid="1" />
+	<command name="Y5-2" modulename="РК-102" rknumber="29" moduleid="1" />
+	<command name="Y6-2" modulename="РК-102" rknumber="30" moduleid="1" />
+	<command name="Y7-2" modulename="РК-102" rknumber="31" moduleid="1" />
+	<command name="Y8-2" modulename="РК-102" rknumber="32" moduleid="1" />
+	<command name="Y9-2" modulename="РК-102" rknumber="33" moduleid="1" />
+	<command name="Y10-2" modulename="РК-102" rknumber="34" moduleid="1" />
+	<command name="Y11-2" modulename="РК-102" rknumber="35" moduleid="1" />
+	<command name="Y12-2" modulename="РК-102" rknumber="36" moduleid="1" />
+	<command name="KB-2 ОП" modulename="РК-102" rknumber="37" moduleid="1" />
+	<command name="КЗ-2 ОП" modulename="РК-102" rknumber="38" moduleid="1" />
+	<command name="KB-2" modulename="РК-102" rknumber="39" moduleid="1" />
+	<command name="КЗ-2" modulename="РК-102" rknumber="40" moduleid="1" />
+	<command name="X1-3" modulename="РК-103" rknumber="1" moduleid="2" />
+	<command name="X2-3" modulename="РК-103" rknumber="2" moduleid="2" />
+	<command name="X3-3" modulename="РК-103" rknumber="3" moduleid="2" />
+	<command name="X4-3" modulename="РК-103" rknumber="4" moduleid="2" />
+	<command name="X5-3" modulename="РК-103" rknumber="5" moduleid="2" />
+	<command name="X6-3" modulename="РК-103" rknumber="6" moduleid="2" />
+	<command name="X7-3" modulename="РК-103" rknumber="7" moduleid="2" />
+	<command name="X8-3" modulename="РК-103" rknumber="8" moduleid="2" />
+	<command name="X9-3" modulename="РК-103" rknumber="9" moduleid="2" />
+	<command name="X10-3" modulename="РК-103" rknumber="10" moduleid="2" />
+	<command name="Y1-3" modulename="РК-103" rknumber="25" moduleid="2" />
+	<command name="Y2-3" modulename="РК-103" rknumber="26" moduleid="2" />
+	<command name="Y3-3" modulename="РК-103" rknumber="27" moduleid="2" />
+	<command name="Y4-3" modulename="РК-103" rknumber="28" moduleid="2" />
+	<command name="Y5-3" modulename="РК-103" rknumber="29" moduleid="2" />
+	<command name="Y6-3" modulename="РК-103" rknumber="30" moduleid="2" />
+	<command name="Y7-3" modulename="РК-103" rknumber="31" moduleid="2" />
+	<command name="Y8-3" modulename="РК-103" rknumber="32" moduleid="2" />
+	<command name="Y9-3" modulename="РК-103" rknumber="33" moduleid="2" />
+	<command name="Y10-3" modulename="РК-103" rknumber="34" moduleid="2" />
+	<command name="Y11-3" modulename="РК-103" rknumber="35" moduleid="2" />
+	<command name="Y12-3" modulename="РК-103" rknumber="36" moduleid="2" />
+	<command name="KB-3 ОП" modulename="РК-103" rknumber="37" moduleid="2" />
+	<command name="КЗ-3 ОП" modulename="РК-103" rknumber="38" moduleid="2" />
+	<command name="KB-3" modulename="РК-103" rknumber="39" moduleid="2" />
+	<command name="КЗ-3" modulename="РК-103" rknumber="40" moduleid="2" />
+	<command name="K1-1" modulename="РК-104" rknumber="1" moduleid="3" />
+	<command name="K2-1" modulename="РК-104" rknumber="2" moduleid="3" />
+	<command name="K3-1" modulename="РК-104" rknumber="3" moduleid="3" />
+	<command name="K4-1" modulename="РК-104" rknumber="4" moduleid="3" />
+	<command name="K5-1" modulename="РК-104" rknumber="5" moduleid="3" />
+	<command name="K6-1" modulename="РК-104" rknumber="6" moduleid="3" />
+	<command name="K7-1" modulename="РК-104" rknumber="7" moduleid="3" />
+	<command name="K8-1" modulename="РК-104" rknumber="8" moduleid="3" />
+	<command name="K9-1" modulename="РК-104" rknumber="9" moduleid="3" />
+	<command name="K10-1" modulename="РК-104" rknumber="10" moduleid="3" />
+	<command name="K1-2" modulename="РК-104" rknumber="11" moduleid="3" />
+	<command name="K2-2" modulename="РК-104" rknumber="12" moduleid="3" />
+	<command name="K3-2" modulename="РК-104" rknumber="13" moduleid="3" />
+	<command name="K4-2" modulename="РК-104" rknumber="14" moduleid="3" />
+	<command name="K5-2" modulename="РК-104" rknumber="15" moduleid="3" />
+	<command name="K6-2" modulename="РК-104" rknumber="16" moduleid="3" />
+	<command name="K7-2" modulename="РК-104" rknumber="17" moduleid="3" />
+	<command name="K8-2" modulename="РК-104" rknumber="18" moduleid="3" />
+	<command name="K9-2" modulename="РК-104" rknumber="19" moduleid="3" />
+	<command name="K10-2" modulename="РК-104" rknumber="20" moduleid="3" />
+	<command name="K1-3" modulename="РК-104" rknumber="21" moduleid="3" />
+	<command name="K2-3" modulename="РК-104" rknumber="22" moduleid="3" />
+	<command name="K3-3" modulename="РК-104" rknumber="23" moduleid="3" />
+	<command name="K4-3" modulename="РК-104" rknumber="24" moduleid="3" />
+	<command name="K5-3" modulename="РК-104" rknumber="25" moduleid="3" />
+	<command name="K6-3" modulename="РК-104" rknumber="26" moduleid="3" />
+	<command name="K7-3" modulename="РК-104" rknumber="27" moduleid="3" />
+	<command name="K8-3" modulename="РК-104" rknumber="28" moduleid="3" />
+	<command name="K9-3" modulename="РК-104" rknumber="29" moduleid="3" />
+	<command name="K10-3" modulename="РК-104" rknumber="30" moduleid="3" />
+	<command name="-А1.1" modulename="РК-117-1" rknumber="1" moduleid="4" />
+	<command name="-А1.2" modulename="РК-117-1" rknumber="2" moduleid="4" />
+	<command name="-А1.3" modulename="РК-117-1" rknumber="3" moduleid="4" />
+	<command name="-А2.1" modulename="РК-117-1" rknumber="4" moduleid="4" />
+	<command name="-А2.2" modulename="РК-117-1" rknumber="5" moduleid="4" />
+	<command name="-А2.3" modulename="РК-117-1" rknumber="6" moduleid="4" />
+	<command name="-А3.1" modulename="РК-117-1" rknumber="7" moduleid="4" />
+	<command name="-А3.2" modulename="РК-117-1" rknumber="8" moduleid="4" />
+	<command name="-А3.3" modulename="РК-117-1" rknumber="9" moduleid="4" />
+	<command name="CK-1a" modulename="РК-117-1" rknumber="46" moduleid="4" />
+	<command name="CK-2a" modulename="РК-117-1" rknumber="47" moduleid="4" />
+	<command name="CK-3a" modulename="РК-117-1" rknumber="48" moduleid="4" />
+	<command name="+А1.1" modulename="РК-117-1" rknumber="34" moduleid="4" />
+	<command name="+А1.2" modulename="РК-117-1" rknumber="35" moduleid="4" />
+	<command name="+А2.1" modulename="РК-117-1" rknumber="36" moduleid="4" />
+	<command name="+А2.2" modulename="РК-117-1" rknumber="37" moduleid="4" />
+	<command name="+А3.1" modulename="РК-117-1" rknumber="38" moduleid="4" />
+	<command name="+А3.2" modulename="РК-117-1" rknumber="39" moduleid="4" />
+	<command name="Вкл. АСС-1" modulename="РК-117-1" rknumber="21" moduleid="4" />
+	<command name="Вкл. АСС-2" modulename="РК-117-1" rknumber="22" moduleid="4" />
+	<command name="Вкл. АСС-3" modulename="РК-117-1" rknumber="23" moduleid="4" />
+	<command name="Откл. АСС-1" modulename="РК-117-1" rknumber="24" moduleid="4" />
+	<command name="Откл. АСС-2" modulename="РК-117-1" rknumber="13" moduleid="4" />
+	<command name="Откл. АСС-3" modulename="РК-117-1" rknumber="14" moduleid="4" />
+</commands>

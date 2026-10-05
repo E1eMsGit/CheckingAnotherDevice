@@ -1,0 +1,1436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestCases>
+<!-- X1-2 -->
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="-А2.1" modulename="РК-117-1" rknumber="4" moduleid="4" duration="65535"/>
+      <command name="CK-2a" modulename="РК-117-1" rknumber="47" moduleid="4" duration="65535"/>
+      <command name="X1-2" modulename="РК-102" rknumber="1" moduleid="1" duration="65535"/>
+    </RkCommands>
+    <PkuCommands>
+
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y1-2" modulename="РК-102" rknumber="25" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X1Y1-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y2-2" modulename="РК-102" rknumber="26" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X1Y2-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y3-2" modulename="РК-102" rknumber="27" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X1Y3-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y4-2" modulename="РК-102" rknumber="28" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X1Y4-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y5-2" modulename="РК-102" rknumber="29" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X1Y5-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y6-2" modulename="РК-102" rknumber="30" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X1Y6-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y7-2" modulename="РК-102" rknumber="31" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X1Y7-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y8-2" modulename="РК-102" rknumber="32" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X1Y8-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y9-2" modulename="РК-102" rknumber="33" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X1Y9-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y10-2" modulename="РК-102" rknumber="34" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X1Y10-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y11-2" modulename="РК-102" rknumber="35" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X1Y11-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y12-2" modulename="РК-102" rknumber="36" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X1Y12-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+  
+<!-- X2-2 -->
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="X1-2" modulename="РК-102" rknumber="1" moduleid="1" duration="0"/>
+	    <command name="X2-2" modulename="РК-102" rknumber="2" moduleid="1" duration="65535"/>
+    </RkCommands>
+    <PkuCommands>
+
+    </PkuCommands>
+  </TestCase>
+    
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y1-2" modulename="РК-102" rknumber="25" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X2Y1-2"/>
+      <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y2-2" modulename="РК-102" rknumber="26" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X2Y2-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y3-2" modulename="РК-102" rknumber="27" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X2Y3-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y4-2" modulename="РК-102" rknumber="28" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X2Y4-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y5-2" modulename="РК-102" rknumber="29" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X2Y5-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y6-2" modulename="РК-102" rknumber="30" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X2Y6-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y7-2" modulename="РК-102" rknumber="31" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X2Y7-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y8-2" modulename="РК-102" rknumber="32" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X2Y8-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y9-2" modulename="РК-102" rknumber="33" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X2Y9-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y10-2" modulename="РК-102" rknumber="34" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X2Y10-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y11-2" modulename="РК-102" rknumber="35" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X2Y11-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y12-2" modulename="РК-102" rknumber="36" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X2Y12-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+  
+<!-- X3-2 -->
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="X2-2" modulename="РК-102" rknumber="2" moduleid="1" duration="0"/>
+	    <command name="X3-2" modulename="РК-102" rknumber="3" moduleid="1" duration="65535"/>
+    </RkCommands>
+    <PkuCommands>
+
+    </PkuCommands>
+  </TestCase>
+  
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y1-2" modulename="РК-102" rknumber="25" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X3Y1-2"/>
+      <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y2-2" modulename="РК-102" rknumber="26" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X3Y2-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y3-2" modulename="РК-102" rknumber="27" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X3Y3-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y4-2" modulename="РК-102" rknumber="28" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X3Y4-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y5-2" modulename="РК-102" rknumber="29" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X3Y5-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y6-2" modulename="РК-102" rknumber="30" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X3Y6-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y7-2" modulename="РК-102" rknumber="31" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X3Y7-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y8-2" modulename="РК-102" rknumber="32" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X3Y8-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y9-2" modulename="РК-102" rknumber="33" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X3Y9-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y10-2" modulename="РК-102" rknumber="34" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X3Y10-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y11-2" modulename="РК-102" rknumber="35" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X3Y11-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y12-2" modulename="РК-102" rknumber="36" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X3Y12-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+  
+<!-- X4-2 -->
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="X3-2" modulename="РК-102" rknumber="3" moduleid="1" duration="0"/>
+	    <command name="X4-2" modulename="РК-102" rknumber="4" moduleid="1" duration="65535"/>
+    </RkCommands>
+    <PkuCommands>
+
+    </PkuCommands>
+  </TestCase>
+  
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y1-2" modulename="РК-102" rknumber="25" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X4Y1-2"/>
+      <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y2-2" modulename="РК-102" rknumber="26" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X4Y2-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y3-2" modulename="РК-102" rknumber="27" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X4Y3-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y4-2" modulename="РК-102" rknumber="28" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X4Y4-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y5-2" modulename="РК-102" rknumber="29" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X4Y5-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y6-2" modulename="РК-102" rknumber="30" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X4Y6-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y7-2" modulename="РК-102" rknumber="31" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X4Y7-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y8-2" modulename="РК-102" rknumber="32" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X4Y8-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y9-2" modulename="РК-102" rknumber="33" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X4Y9-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y10-2" modulename="РК-102" rknumber="34" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X4Y10-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y11-2" modulename="РК-102" rknumber="35" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X4Y11-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y12-2" modulename="РК-102" rknumber="36" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X4Y12-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+  
+<!-- X5-2 -->
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="X4-2" modulename="РК-102" rknumber="4" moduleid="1" duration="0"/>
+	    <command name="X5-2" modulename="РК-102" rknumber="5" moduleid="1" duration="65535"/>
+    </RkCommands>
+    <PkuCommands>
+    
+    </PkuCommands>
+  </TestCase>
+  
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y1-2" modulename="РК-102" rknumber="25" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X5Y1-2"/>
+      <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y2-2" modulename="РК-102" rknumber="26" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X5Y2-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y3-2" modulename="РК-102" rknumber="27" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X5Y3-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y4-2" modulename="РК-102" rknumber="28" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X5Y4-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y5-2" modulename="РК-102" rknumber="29" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X5Y5-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y6-2" modulename="РК-102" rknumber="30" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X5Y6-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y7-2" modulename="РК-102" rknumber="31" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X5Y7-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y8-2" modulename="РК-102" rknumber="32" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X5Y8-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y9-2" modulename="РК-102" rknumber="33" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X5Y9-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y10-2" modulename="РК-102" rknumber="34" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X5Y10-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y11-2" modulename="РК-102" rknumber="35" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X5Y11-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y12-2" modulename="РК-102" rknumber="36" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X5Y12-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+  
+<!-- X6-2 -->
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="X5-2" modulename="РК-102" rknumber="5" moduleid="1" duration="0"/>
+	    <command name="X6-2" modulename="РК-102" rknumber="6" moduleid="1" duration="65535"/>
+    </RkCommands>
+    <PkuCommands>
+
+    </PkuCommands>
+  </TestCase>
+  
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y1-2" modulename="РК-102" rknumber="25" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X6Y1-2"/>
+      <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y2-2" modulename="РК-102" rknumber="26" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X6Y2-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y3-2" modulename="РК-102" rknumber="27" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X6Y3-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y4-2" modulename="РК-102" rknumber="28" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X6Y4-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y5-2" modulename="РК-102" rknumber="29" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X6Y5-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y6-2" modulename="РК-102" rknumber="30" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X6Y6-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y7-2" modulename="РК-102" rknumber="31" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X6Y7-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y8-2" modulename="РК-102" rknumber="32" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X6Y8-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y9-2" modulename="РК-102" rknumber="33" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X6Y9-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y10-2" modulename="РК-102" rknumber="34" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X6Y10-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y11-2" modulename="РК-102" rknumber="35" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X6Y11-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y12-2" modulename="РК-102" rknumber="36" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X6Y12-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+  
+<!-- X7-2 -->
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="X6-2" modulename="РК-102" rknumber="6" moduleid="1" duration="0"/>
+	    <command name="X7-2" modulename="РК-102" rknumber="7" moduleid="1" duration="65535"/>
+    </RkCommands>
+    <PkuCommands>
+
+    </PkuCommands>
+  </TestCase>
+  
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y1-2" modulename="РК-102" rknumber="25" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X7Y1-2"/>
+      <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y2-2" modulename="РК-102" rknumber="26" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X7Y2-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y3-2" modulename="РК-102" rknumber="27" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X7Y3-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y4-2" modulename="РК-102" rknumber="28" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X7Y4-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y5-2" modulename="РК-102" rknumber="29" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X7Y5-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y6-2" modulename="РК-102" rknumber="30" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X7Y6-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y7-2" modulename="РК-102" rknumber="31" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X7Y7-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y8-2" modulename="РК-102" rknumber="32" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X7Y8-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y9-2" modulename="РК-102" rknumber="33" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X7Y9-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y10-2" modulename="РК-102" rknumber="34" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X7Y10-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y11-2" modulename="РК-102" rknumber="35" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X7Y11-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y12-2" modulename="РК-102" rknumber="36" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X7Y12-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+  
+<!-- X8-2 -->
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="X7-2" modulename="РК-102" rknumber="7" moduleid="1" duration="0"/>
+	    <command name="X8-2" modulename="РК-102" rknumber="8" moduleid="1" duration="65535"/>
+    </RkCommands>
+    <PkuCommands>
+    
+    </PkuCommands>
+  </TestCase>
+  
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y1-2" modulename="РК-102" rknumber="25" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X8Y1-2"/>
+      <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y2-2" modulename="РК-102" rknumber="26" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X8Y2-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y3-2" modulename="РК-102" rknumber="27" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X8Y3-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y4-2" modulename="РК-102" rknumber="28" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X8Y4-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y5-2" modulename="РК-102" rknumber="29" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X8Y5-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y6-2" modulename="РК-102" rknumber="30" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X8Y6-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y7-2" modulename="РК-102" rknumber="31" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X8Y7-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y8-2" modulename="РК-102" rknumber="32" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X8Y8-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y9-2" modulename="РК-102" rknumber="33" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X8Y9-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y10-2" modulename="РК-102" rknumber="34" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X8Y10-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y11-2" modulename="РК-102" rknumber="35" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X8Y11-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y12-2" modulename="РК-102" rknumber="36" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X8Y12-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+  
+<!-- X9-2 -->
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="X8-2" modulename="РК-102" rknumber="8" moduleid="1" duration="0"/>
+	    <command name="X9-2" modulename="РК-102" rknumber="9" moduleid="1" duration="65535"/>
+    </RkCommands>
+    <PkuCommands>
+
+    </PkuCommands>
+  </TestCase>
+  
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y1-2" modulename="РК-102" rknumber="25" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X9Y1-2"/>
+      <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y2-2" modulename="РК-102" rknumber="26" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X9Y2-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y3-2" modulename="РК-102" rknumber="27" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X9Y3-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y4-2" modulename="РК-102" rknumber="28" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X9Y4-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y5-2" modulename="РК-102" rknumber="29" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X9Y5-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y6-2" modulename="РК-102" rknumber="30" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X9Y6-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y7-2" modulename="РК-102" rknumber="31" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X9Y7-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y8-2" modulename="РК-102" rknumber="32" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X9Y8-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y9-2" modulename="РК-102" rknumber="33" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X9Y9-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y10-2" modulename="РК-102" rknumber="34" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X9Y10-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y11-2" modulename="РК-102" rknumber="35" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X9Y11-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y12-2" modulename="РК-102" rknumber="36" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X9Y12-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+  
+<!-- X10-2 -->
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="X9-2" modulename="РК-102" rknumber="9" moduleid="1" duration="0"/>
+	    <command name="X10-2" modulename="РК-102" rknumber="10" moduleid="1" duration="65535"/>
+    </RkCommands>
+    <PkuCommands>
+    
+    </PkuCommands>
+  </TestCase>
+  
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y1-2" modulename="РК-102" rknumber="25" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X10Y1-2"/>
+      <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y2-2" modulename="РК-102" rknumber="26" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X10Y2-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y3-2" modulename="РК-102" rknumber="27" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X10Y3-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y4-2" modulename="РК-102" rknumber="28" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X10Y4-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y5-2" modulename="РК-102" rknumber="29" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X10Y5-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y6-2" modulename="РК-102" rknumber="30" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X10Y6-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y7-2" modulename="РК-102" rknumber="31" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X10Y7-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y8-2" modulename="РК-102" rknumber="32" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X10Y8-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y9-2" modulename="РК-102" rknumber="33" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X10Y9-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y10-2" modulename="РК-102" rknumber="34" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X10Y10-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y11-2" modulename="РК-102" rknumber="35" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X10Y11-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="Y12-2" modulename="РК-102" rknumber="36" moduleid="1" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+      <pku name="X10Y12-2"/>
+	    <pku name="СК-2б"/>
+    </PkuCommands>
+  </TestCase>
+
+<!-- К-2 -->
+  <TestCase delay="1000">
+    <RkCommands>
+      <command name="CK-2a" modulename="РК-117-1" rknumber="47" moduleid="4" duration="0"/>
+      <command name="X10-2" modulename="РК-102" rknumber="10" moduleid="1" duration="0"/>
+	    <command name="+А2.1" modulename="РК-117-1" rknumber="36" moduleid="4" duration="65535"/>
+    </RkCommands>
+    <PkuCommands>
+
+    </PkuCommands>
+  </TestCase>
+  
+  <TestCase delay="1000">
+    <RkCommands>
+	    <command name="K1-2" modulename="РК-104" rknumber="11" moduleid="3" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+		  <pku name="X1Y1-2"/>
+	    <pku name="X3Y1-2"/>
+		  <pku name="X3Y7-2"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+	    <command name="K2-2" modulename="РК-104" rknumber="12" moduleid="3" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+		  <pku name="X1Y2-2"/>
+	    <pku name="X3Y6-2"/>
+		  <pku name="X3Y1-2"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+	    <command name="K3-2" modulename="РК-104" rknumber="13" moduleid="3" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+		  <pku name="X1Y5-2"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+	    <command name="K4-2" modulename="РК-104" rknumber="14" moduleid="3" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+		  <pku name="X2Y1-2"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+	    <command name="K5-2" modulename="РК-104" rknumber="15" moduleid="3" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+		  <pku name="X2Y2-2"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+	    <command name="K6-2" modulename="РК-104" rknumber="16" moduleid="3" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+		  <pku name="X2Y7-2"/>
+	    <pku name="X3Y3-2"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+	    <command name="K7-2" modulename="РК-104" rknumber="17" moduleid="3" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+		  <pku name="X2Y4-2"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+	    <command name="K8-2" modulename="РК-104" rknumber="18" moduleid="3" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+		  <pku name="X6Y6-2"/>
+	    <pku name="X6Y8-2"/>
+		  <pku name="X4Y5-2"/>
+		  <pku name="X5Y5-2"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+	    <command name="K9-2" modulename="РК-104" rknumber="19" moduleid="3" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+		  <pku name="X1Y3-2"/>
+	    <pku name="X3Y9-2"/>
+		  <pku name="X3Y1-2"/>
+		  <pku name="X3Y5-2"/>
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="1000">
+    <RkCommands>
+	    <command name="K10-2" modulename="РК-104" rknumber="20" moduleid="3" duration="100"/>
+    </RkCommands>
+    <PkuCommands>
+		  <pku name="X3Y5-2"/>
+    </PkuCommands>
+  </TestCase>
+  
+  <TestCase delay="1000">
+    <RkCommands>
+	    <command name="+А2.1" modulename="РК-117-1" rknumber="36" moduleid="4" duration="0"/>
+	    <command name="-А2.1" modulename="РК-117-1" rknumber="4" moduleid="4" duration="0"/>
+    </RkCommands>
+    <PkuCommands>
+
+    </PkuCommands>
+  </TestCase>
+</TestCases>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestCases>
+  <TestCase delay="100">
+    <RkCommands>
+        <command name="-А3.1" modulename="РК-117-1" rknumber="7" moduleid="4" duration="65535"/>
+	      <command name="+А3.1" modulename="РК-117-1" rknumber="38" moduleid="4" duration="65535"/>
+    </RkCommands>
+    <PkuCommands>
+
+    </PkuCommands>
+  </TestCase>
+
+  <TestCase delay="5000">
+    <RkCommands>
+	    <command name="K8-3" modulename="РК-104" rknumber="28" moduleid="3" duration="10000"/>
+    </RkCommands>
+    <PkuCommands>
+		<pku name="X6Y6-3"/>
+	    <pku name="X6Y8-3"/>
+		<pku name="X4Y5-3"/>
+		<pku name="X5Y5-3"/>
+    </PkuCommands>
+  </TestCase>
+  
+  <TestCase delay="100">
+    <RkCommands>
+	    <command name="+А3.1" modulename="РК-117-1" rknumber="38" moduleid="4" duration="0"/>
+	    <command name="-А3.1" modulename="РК-117-1" rknumber="7" moduleid="4" duration="0"/>
+    </RkCommands>
+    <PkuCommands>
+
+    </PkuCommands>
+  </TestCase>
+</TestCases>

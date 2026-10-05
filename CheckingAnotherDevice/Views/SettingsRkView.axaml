@@ -1,0 +1,69 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModels="clr-namespace:CheckingAnotherDevice.ViewModels"
+             xmlns:models="clr-namespace:CheckingAnotherDevice.Models.Rk"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="CheckingAnotherDevice.Views.SettingsRkView">
+   
+    <UserControl.DataContext>
+       <viewModels:SettingsRkViewModel/>
+   </UserControl.DataContext>
+
+    <UserControl.Resources>
+        <DataTemplate x:Key="IRTemplate" DataType="models:RkCommands">
+            <HeaderedContentControl Background="Gray" Header="{Binding Name}" Margin="0 20 0 0">
+                <StackPanel Spacing="10" Margin="10 0">
+                    <TextBlock Text="Номер РК" HorizontalAlignment="Center"/>
+                    <NumericUpDown Value="{Binding NumberRk}" LostFocus="InputElement_OnLostFocus"
+                                   Classes="RkPkuValues"/>
+                </StackPanel>
+            </HeaderedContentControl>
+        </DataTemplate>
+
+        <UniformGridLayout x:Key="IRLayout" Orientation="Horizontal" ItemsStretch="Fill"
+                           MaximumRowsOrColumns="7" MinColumnSpacing="20"/>
+    </UserControl.Resources>
+
+    <Grid RowDefinitions="* Auto" Margin="40 0 ">
+        <TabControl Grid.Row="0" Padding="0">
+            <TabItem Header="{Binding RkCommands[0][0].ModuleName}">
+				<ScrollViewer  VerticalScrollBarVisibility="Hidden">
+                    <ItemsRepeater  Items="{Binding RkCommands[0]}"
+                                    ItemTemplate="{StaticResource IRTemplate}"
+                                    Layout="{StaticResource IRLayout}"/>
+                </ScrollViewer>
+			</TabItem>
+            <TabItem Header="{Binding RkCommands[1][0].ModuleName}">
+                <ScrollViewer  VerticalScrollBarVisibility="Hidden">
+                    <ItemsRepeater  Items="{Binding RkCommands[1]}"
+                                    ItemTemplate="{StaticResource IRTemplate}"
+                                    Layout="{StaticResource IRLayout}"/>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="{Binding RkCommands[2][0].ModuleName}">
+                <ScrollViewer  VerticalScrollBarVisibility="Hidden">
+                    <ItemsRepeater  Items="{Binding RkCommands[2]}"
+                                    ItemTemplate="{StaticResource IRTemplate}"
+                                    Layout="{StaticResource IRLayout}"/>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="{Binding RkCommands[3][0].ModuleName}">
+                <ScrollViewer  VerticalScrollBarVisibility="Hidden">
+                    <ItemsRepeater  Items="{Binding RkCommands[3]}"
+                                    ItemTemplate="{StaticResource IRTemplate}"
+                                    Layout="{StaticResource IRLayout}"/>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="{Binding RkCommands[4][0].ModuleName}">
+                <ScrollViewer  VerticalScrollBarVisibility="Hidden">
+                    <ItemsRepeater  Items="{Binding RkCommands[4]}"
+                                    ItemTemplate="{StaticResource IRTemplate}"
+                                    Layout="{StaticResource IRLayout}"/>
+                </ScrollViewer>
+            </TabItem>
+        </TabControl>
+        <Button Grid.Row="1" Command="{Binding SaveSettingsRkCommand}" Classes="SaveBtn"/>
+    </Grid>
+</UserControl>

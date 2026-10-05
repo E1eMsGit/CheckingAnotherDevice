@@ -1,0 +1,93 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <!--Avalonia doesen't support TrimMode=link currently,but we are working on that https://github.com/AvaloniaUI/Avalonia/issues/6892 -->
+    <TrimMode>copyused</TrimMode>
+    <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+    <ApplicationIcon>Assets\hub.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <AvaloniaResource Include="Assets\**" />
+    <AvaloniaXaml Remove="Relays\**" />
+    <Compile Remove="Relays\**" />
+    <EmbeddedResource Remove="Relays\**" />
+    <None Remove="Relays\**" />
+    <None Remove=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--This helps with theme dll-s trimming.
+	If you will publish your application in self-contained mode with p:PublishTrimmed=true and it will use Fluent theme Default theme will be trimmed from the output and vice versa.
+	https://github.com/AvaloniaUI/Avalonia/issues/5593 -->
+    <TrimmableAssembly Include="Avalonia.Themes.Fluent" />
+    <TrimmableAssembly Include="Avalonia.Themes.Default" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="0.10.22" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.10.22" />
+    <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="0.10.22" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.22" />
+    <PackageReference Include="Avalonia.Xaml.Interactions" Version="0.10.22" />
+    <PackageReference Include="ReactiveUI" Version="20.2.45" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <PackageReference Include="XamlNameReferenceGenerator" Version="1.6.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\DeviceCheckingView.axaml.cs">
+      <DependentUpon>DeviceCheckingView.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="settingsPku.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="settingsRk.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="settings.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\hub.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Rss.TmFramework">
+      <HintPath>..\dll\Rss.TmFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Rss.TmFramework.Base">
+      <HintPath>..\dll\Rss.TmFramework.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Rss.TmFramework.Channels.Serial">
+      <HintPath>..\dll\Rss.TmFramework.Channels.Serial.dll</HintPath>
+    </Reference>
+    <Reference Include="Rss.TmFramework.Modules.RkPku">
+      <HintPath>..\dll\Rss.TmFramework.Modules.RkPku.dll</HintPath>
+    </Reference>
+    <Reference Include="Rss.TmFramework.Mvvm">
+      <HintPath>..\dll\Rss.TmFramework.Mvvm.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
